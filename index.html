@@ -450,7 +450,7 @@ function buildCards(tracks,gridId,isSE){
   const grid=document.getElementById(gridId);
   tracks.forEach(track=>{
     const idx=cardIndex++;
-    const src=`audio/${encodeURIComponent(track.name)}.mp3`;
+    const src=`audio/${track.name}.mp3`;
     const card=document.createElement('div');
     card.className='track-card'+(isSE?' se-card':'');
     card.dataset.idx=idx;
